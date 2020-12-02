@@ -1,18 +1,25 @@
 
 import React, { useState, useEffect } from 'react';
+import './App.css'
 
 const btnStyle = {
-  color: "white",
-  padding: "1%",
-  border: "1px solid #ececec",
-  background: "#333",
-  fontSize: "1.25rem",
+    color: "white",
+    padding: "1%",
+    border: "1px solid #ececec",
+    background: "#333",
+    fontSize: "1.25rem",
+  }
+
+const Title = {  
+    fontSize: "1.5rem",
+    color: "#333",
 }
-const Title = {
-  fontSize: "1.5rem",
-  color: "#333",
-  padding: "2%",
-} 
+
+const main = {
+  paddingLeft: "2%",
+  width:"80%",
+  margin:"0 auto",
+}
 
 function App() {
   console.log('Hello')
@@ -30,7 +37,7 @@ function App() {
     console.log('첫 렌더링에만 호출')
   }, [])
   return (
-    <div>
+    <div style={main}>
       <p style={Title}> You clicked {count} times</p>
       <button style={btnStyle} onClick={() => setCount(count + 1)}>
         Click +1 
