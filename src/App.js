@@ -34,8 +34,8 @@ function App() {
     console.log('lifecycle')
   },[count]);
   useEffect(() => {
-    console.log('첫 렌더링에만 호출')
-  }, [])
+    console.log('첫 렌더링에만 호출');
+  },[]);
   return (
     <div style={main}>
       <p style={Title}> You clicked {count} times</p>
