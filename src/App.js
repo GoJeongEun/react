@@ -6,7 +6,14 @@ const btnStyle = {
     color: "white",
     padding: "1%",
     border: "1px solid #ececec",
-    background: "#333",
+    background: "#ff0000",
+    fontSize: "1.25rem",
+  }
+  const btnStyleR = {
+    color: "white",
+    padding: "1%",
+    border: "1px solid #ececec",
+    background: "#178277",
     fontSize: "1.25rem",
   }
 
@@ -44,7 +51,7 @@ function App() {
       <button style={btnStyle} onClick={() => setCount(count + 1)}>
         Click +1 
       </button>
-      <button style={btnStyle} onClick={() => setCount(count - 1)}>
+      <button style={btnStyleR} onClick={() => setCount(count - 1)}>
         Click -1
       </button>
     </div>
