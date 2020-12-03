@@ -19,13 +19,14 @@ const btnStyle = {
 
 const Title = {  
     fontSize: "1.5rem",
-    color: "#333",
+    color: "white",
 }
 
 const main = {
-  paddingLeft: "2%",
+  padding: "5%",
   width:"80%",
   margin:"0 auto",
+  background: "#523e03",
 }
 
 function App() {
