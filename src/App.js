@@ -28,9 +28,9 @@ function App() {
     document.title='My first react';
   });
   
-  // useEffect(() => {
-  //   console.log('lifecycle')
-  // },[count]);
+  useEffect(() => {
+    console.log('lifecycle')
+  },[count]);
   useEffect(() => {
     console.log('re-render');
     return () => {
