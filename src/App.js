@@ -1,5 +1,4 @@
 
-import userEvent from '@testing-library/user-event';
 import React, { useState, useEffect } from 'react';
 import './App.css'
 
