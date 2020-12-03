@@ -1,4 +1,5 @@
 
+import userEvent from '@testing-library/user-event';
 import React, { useState, useEffect } from 'react';
 import './App.css'
 
@@ -22,20 +23,22 @@ const main = {
 }
 
 function App() {
-  console.log('Hello')
-  console.log('react')
   const [count, setCount] = useState(0);
   useEffect(() => {
     // browser title 수정
     document.title='My first react';
   });
   
+  // useEffect(() => {
+  //   console.log('lifecycle')
+  // },[count]);
   useEffect(() => {
-    console.log('lifecycle')
+    console.log('re-render');
+    return () => {
+      console.log('death');
+    };
   },[count]);
-  useEffect(() => {
-    console.log('첫 렌더링에만 호출');
-  },[]);
+  
   return (
     <div style={main}>
       <p style={Title}> You clicked {count} times</p>
