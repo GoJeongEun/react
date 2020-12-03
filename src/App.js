@@ -42,7 +42,7 @@ function App() {
   useEffect(() => {
     console.log('re-render');
     return () => {
-      console.log('death');
+      console.log('die');
     };
   },[count]);
   
